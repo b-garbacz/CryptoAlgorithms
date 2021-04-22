@@ -1,3 +1,10 @@
+def dec2bin(x):
+    y = bin(x)[2:]
+    tab = []
+    for i in range(0, len(y)):
+        tab.append(int(y[i]))
+    return tab
+
 def fast_p(a, b, n) -> object:
     e = dec2bin(b)
     c = 1
