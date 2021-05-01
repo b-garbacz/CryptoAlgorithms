@@ -1,8 +1,6 @@
 import random
 from Tabofprimes import TabOfPrimes
-import time
 
-# FIXME: Miller-Rabin is not working for large prime numbers
 
 def dec2bin(x):
     y = bin(x)[2:]
@@ -32,7 +30,7 @@ def miller_rabin_test(n, k) -> bool:
     s = 0
     d = n - 1
     while d % 2 == 0:
-        s, d = s + 1, int(d / 2)
+        s, d = s + 1, d // 2
     for xd in range(k):
         a = random.randint(1, n - 1)
         x = fast_p(a, d, n)
@@ -61,7 +59,3 @@ def test():
 
 print("Out of", len(TabOfPrimes), " test cases of prime numbers,", test(), "are positive for Miller-Rabin-Test")
 
-start = time.time()
-# but 3333 is composite = 3*11*101
-print(miller_rabin_test(2222, 10))
-print(time.time() - start)
