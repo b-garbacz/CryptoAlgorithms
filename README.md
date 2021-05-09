@@ -1,4 +1,4 @@
-#CryptoAlgorithms
+# CryptoAlgorithms
 cryptographic algorithms which i have done on laboratory classes. <br />
 What can you find here ?
 ### :file_folder: factorization <br />
@@ -7,8 +7,8 @@ What can you find here ?
 ### :file_folder: discrete logarithm problem <br />
 * :heavy_check_mark: DlpPollard.py - Pollard's p − 1 algorithm
 * :heavy_check_mark: Shanks.py - Baby-step giant-step algorithm
-### :file_folder: discrete logarithm problem <br />
+### :file_folder: Primality tests <br />
 * :heavy_check_mark: FermatPrimaryTest.py - Fermat primality test
-* :x: Miller_Rabin.py - Miller-Rabin primality test (Fix in the future)
+* :heavy_check_mark: Miller_Rabin.py - Miller-Rabin primality test 
 
 :heavy_exclamation_mark: Lattice algorithms implemented in SAGE-math on next update
