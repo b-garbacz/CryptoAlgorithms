@@ -126,6 +126,15 @@ def exec_english(ctxt):
     tab_ctxt_numbers, letter_frequency = get_dicts(ctxt)
     decryption(tab_ctxt_numbers, eng, letter_frequency)
 
+
+def affi_breaker(arg, ctxt):
+    if arg == '1':
+        exec_polish(ctxt)
+    elif arg == '2':
+        exec_english(ctxt)
+    else:
+        quit()
+
 ######################################################################################################
 
 #The most frequency repeated letters in Polish
@@ -145,18 +154,12 @@ ctxt = "FYEPXMOCYFPYZYLQWMLBMIDMGYFPYIPLMYGUVUCFLKSYBKLFMFMIFPYMBMUFXKAYSMZYXFUY
 ctxt = "BKDBCRBHAROIRKBBKIESKRSKUPERRANCPIEPSAIBKDDCJQEPAROEXKUBERRANCPIEPACIGHCRSKUIBKDDCJQEPAROEXKUBQKKMAROBKJESAIKUPGHEBKMESFCBIQCFCXPEBCXUBJKGCHENCBKQCFCXPEBCBKOCBHCPABHKUOHBGCKRFSQCFCXPEBCJAYDKPBERBCNCRBISKUQERQCFCXPEBCERRANCPIEPACIGABHSKUPRCZBHUIXERJSKUJKRBFAMCGHEBADAQMKUBIKABHKUOHBGHSXKBHCPAOKBSKUEDPCICRBGKPBHEJKFFEPVKPCNCPSBAYCSKUGCPCRAQCBKYCBHAISCEPHCPCIEVANCOAVBQCPBAVAQEBCVKPYQJKREFJIAVSKUGERBYCBKDPCBCRJFAMCAQEPCEXKUBKUPERRANCPIEPSAGAFFSKUGERBBKOKKUBBKJARRCPKMESKMESAFFBEMCSKUBKDALLEHUBAVABFFIHUBSEUDABHKUOHBSKUKRFSHEJBKQCFCXPEBCERRANCPIEPACIGHAFCSKUGCPCIBAFFRFKNC"
 ctxt = "EGNWTAWHPNHCEGVPWAHSTSJVFEVHSNMNAJVPNVPEHANDVSYBHTEGFEENMVPWAVDFAVOBJHSJNASNYXVEGGVRGLTFOVEBENJGSVJFODFSTPJAVWEPVEPNDWGFPVPVPHSFAEFSYENJGSHOHRBFPVSEGNTSYNAOBVSRRANNZXHAY"
 #test texts(Polish)
-#2ctxt = "BWGXOIYCFKXACWK"
+ctxt = "BWGXOIYCFKXACWK"
 ptxt = []
 
 
-def affi_breaker(arg, ctxt):
-    if arg == '1':
-        exec_polish(ctxt)
-    elif arg == '2':
-        exec_english(ctxt)
-    else:
-        quit()
-print("[1]. Polish")
-print("[2]. English")
-arg = input("Select language\n")
-affi_breaker(arg,ctxt)
+if __name__ == "__main__":
+    print("[1]. Polish")
+    print("[2]. English")
+    arg = input("Select language\n")
+    affi_breaker(arg,ctxt)
