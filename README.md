@@ -14,5 +14,7 @@ What can you find here ?
 * :heavy_check_mark: Miller_Rabin.py - Miller-Rabin primality test 
 ### :file_folder: Elliptic curves <br />
 * :heavy_check_mark: Montgomery.sagews - Montgomery-EC
+### :file_folder: Lattice-based cryptography <br />
+* :heavy_check_mark: NTRU.sagews - NTRU - public-key cryptosystem
+* :heavy_check_mark: Reductions.sagews - LLL + Gram-Schmidt Orthogonalization + Gauss-Lagrange Reduction
 
-:heavy_exclamation_mark: Lattice algorithms implemented in SAGE-math on next update
